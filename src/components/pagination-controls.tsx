@@ -7,7 +7,7 @@ type PaginationControlsProps = {
 };
 
 const btnStyles =
-  'className="text-white flex items-center gap-x-2 px-5 py-3 bg-white/5 rounded-md opacity-75 hover:opacity-100 transition text-sm';
+  "text-white flex items-center gap-x-2 px-5 py-3 bg-white/5 rounded-md opacity-75 hover:opacity-100 transition text-sm";
 
 export default function PaginationControls({
   previousPath,

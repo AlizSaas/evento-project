@@ -21,19 +21,6 @@ export async function  generateMetadata({ params }: Props):Promise<Metadata>{
     title: event.name,
   }
 }
-export async function generateStaticParams() {
-  // top 100 most popular events
-  return [
-    {
-      slug: "comedy-extravaganza",
-    },
-    {
-      slug: "dj-practice-session",
-    },
-  ];
-}
-
-
 export default async function EventPage({ params }: Props) {
 
   const { slug } = params;
@@ -85,7 +72,7 @@ const event = await GetEvent(slug)
           </div>
         </div>
       </section>
-      <div className=" min-h-[75vh]text-center px-5 py-16 ">
+      <div className=" min-h-[75vh] text-center px-5 py-16 ">
         <Section>
           <SectionHeading>About this event</SectionHeading>
           <SectionContent> {event.description}</SectionContent>
